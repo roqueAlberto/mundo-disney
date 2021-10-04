@@ -5,6 +5,9 @@ import java.time.LocalDate;
 
 import com.alkemy.models.Pelicula;
 
+import lombok.Data;
+
+@Data
 public class PeliculaDTO {
 
 	private String imagen;
@@ -18,24 +21,7 @@ public class PeliculaDTO {
 		this.fechaCreacion = pelicula.getFechaCreacion();
 	}
 	
-	public String getImagen() {
-		return imagen;
-	}
-	public void setImagen(String imagen) {
-		this.imagen = imagen;
-	}
-	public String getTitulo() {
-		return titulo;
-	}
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-	public LocalDate getFechaCreacion() {
-		return fechaCreacion;
-	}
-	public void setFechaCreacion(LocalDate fechaCreacion) {
-		this.fechaCreacion = fechaCreacion;
-	}
+	
 	
 	
 	

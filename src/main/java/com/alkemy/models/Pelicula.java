@@ -21,6 +21,11 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data @NoArgsConstructor
 @Entity
 @Table(name = "pelicula")
 public class Pelicula {
@@ -51,65 +56,7 @@ public class Pelicula {
 	@ManyToMany(fetch = FetchType.LAZY)
 	private List<Personaje> personajes = new ArrayList<>();
 	
-	
 
-	public Pelicula() {}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getImagen() {
-		return imagen;
-	}
-
-	public void setImagen(String imagen) {
-		this.imagen = imagen;
-	}
-
-	public String getTitulo() {
-		return titulo;
-	}
-
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-
-	public LocalDate getFechaCreacion() {
-		return fechaCreacion;
-	}
-
-	public void setFechaCreacion(LocalDate fechaCreacion) {
-		this.fechaCreacion = fechaCreacion;
-	}
-
-	public int getCalificacion() {
-		return calificacion;
-	}
-
-	public void setCalificacion(int calificacion) {
-		this.calificacion = calificacion;
-	}
-
-	public Genero getGenero() {
-		return genero;
-	}
-
-	public void setGenero(Genero genero) {
-		this.genero = genero;
-	}
-
-	public List<Personaje> getPersonajes() {
-		return personajes;
-	}
-
-	public void setPersonajes(List<Personaje> personajes) {
-		this.personajes = personajes;
-	}
 	
 	
 	

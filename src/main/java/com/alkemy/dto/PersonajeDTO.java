@@ -2,6 +2,9 @@ package com.alkemy.dto;
 
 import com.alkemy.models.Personaje;
 
+import lombok.Data;
+
+@Data
 public class PersonajeDTO {
 
 	
@@ -15,25 +18,6 @@ public class PersonajeDTO {
 	}
 
 
-	public String getImagen() {
-		return imagen;
-	}
-
-
-	public void setImagen(String imagen) {
-		this.imagen = imagen;
-	}
-
-
-	public String getNombre() {
-		return nombre;
-	}
-
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-	
 	
 	
 	

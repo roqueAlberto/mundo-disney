@@ -12,17 +12,14 @@ import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor
 @Entity
-@Table(name = "genero")
-public class Genero {
+@Table(name = "usuario")
+public class Usuario {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id_genero")
+	@Column(name = "id_usuario")
 	private int id;
-	private String imagen;
-	private String nombre;
 	
-	
-	
-	
+	private String username;
+	private String password;
 }
